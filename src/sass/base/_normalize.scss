@@ -1,0 +1,38 @@
+@import 'modern-normalize';
+@import './valiables';
+
+body {
+  font-family: 'Manjari', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: $background-color;
+  color: $text-color;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button {
+  width: $btn-width;
+  height: $btn-height;
+}

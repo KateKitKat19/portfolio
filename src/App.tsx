@@ -1,23 +1,17 @@
 import React from 'react';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { SharedLayout } from './components/SharedLayout/SharedLayout';
+import { HomePage } from './pages/HomePage/HomePage';
+import { AboutPage } from './pages/AboutPage/AboutPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<SharedLayout />}>
+        <Route index element={<HomePage />} />
+        <Route path="about" element={<AboutPage />} />
+      </Route>
+    </Routes>
   );
 }
 
