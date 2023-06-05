@@ -1,3 +1,11 @@
+import { Hero } from '../../components/Hero/Hero';
+import { Waves } from '../../components/Waves/Waves';
+
 export const HomePage = () => {
-  return <h2>"Here is my homepage! Hi"</h2>;
+  return (
+    <>
+      <Hero></Hero>
+      <Waves />
+    </>
+  );
 };
