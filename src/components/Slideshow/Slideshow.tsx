@@ -3,7 +3,7 @@ import 'react-slideshow-image/dist/styles.css';
 import { Fade } from 'react-slideshow-image';
 
 import Galleria from '../../assets/phonebook.jpg';
-import Filmoteka from '../../assets/filmoteka.jpg';
+import Filmoteka from '../../assets/filmoteka2.jpg';
 import Icecream from '../../assets/icecream2.jpg';
 import Soyummy from '../../assets/soyummy.jpg';
 import Splitter from '../../assets/splitter.jpg';
@@ -18,6 +18,7 @@ const slideImages = [
   { src: `${Usersearch}`, caption: 'Usersearch' },
 ];
 
+// ADJUST BUTTONS!!~~!!
 const buttonStyle = {
   width: '30px',
   background: 'none',
