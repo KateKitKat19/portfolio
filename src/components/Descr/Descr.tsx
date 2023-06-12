@@ -5,8 +5,6 @@ export const Description = () => {
   const timePassed = getTimePassed();
 
   console.log(timePassed);
-
-  debugger;
   return (
     <div>
       <div className="waves">
@@ -15,7 +13,8 @@ export const Description = () => {
           <li>Kateryna</li>
           <li>Front-end developer</li>
           <li>
-            {timePassed.years} year {timePassed.months} months {timePassed.days} days of coding
+            {timePassed.years} {timePassed.years > 1 ? 'years' : 'year'} {timePassed.months} months{' '}
+            {timePassed.days} days of coding
           </li>
         </ul>
       </div>
