@@ -1,9 +1,10 @@
 import { Description } from '../../components/Descr/Descr';
 import skillsArr from '../../data/skills.json';
+import softSkillsArr from '../../data/softskills.json';
 import { Skills } from '../../components/Skills/Skills';
-
+import { SoftSkills } from '../../components/SoftSkills/SoftSkills';
+import { Bio } from '../../components/Bio/Bio';
 export const AboutPage = () => {
-  console.log('skillsArr: ', skillsArr);
   return (
     <div>
       <h3>This is my About Page</h3>
@@ -11,6 +12,12 @@ export const AboutPage = () => {
       <ul>
         <li>
           <Skills arr={skillsArr} />
+        </li>
+        <li>
+          <SoftSkills arr={softSkillsArr} />
+        </li>
+        <li>
+          <Bio></Bio>
         </li>
       </ul>
     </div>

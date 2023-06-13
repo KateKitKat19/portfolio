@@ -3,8 +3,6 @@ import { getTimePassed } from '../../helpers/calcTheData';
 
 export const Description = () => {
   const timePassed = getTimePassed();
-
-  console.log(timePassed);
   return (
     <div>
       <div className="waves">
@@ -13,8 +11,9 @@ export const Description = () => {
           <li>Kateryna</li>
           <li>Front-end developer</li>
           <li>
-            {timePassed.years} {timePassed.years > 1 ? 'years' : 'year'} {timePassed.months} months{' '}
-            {timePassed.days} days of coding
+            {timePassed.years} {timePassed.years > 1 ? 'years' : 'year'}{' '}
+            {timePassed.months > 0 && `${timePassed.months} months`}
+            {timePassed.days > 0 && `${timePassed.days} days`} of coding
           </li>
         </ul>
       </div>
