@@ -7,9 +7,9 @@ import { MoreAbout } from '../../components/MoreAbout/MoreAbout';
 const HomePage = () => {
   return (
     <>
-      {/* <Hero />
-      <Waves />
-      <Projects />
+      <Hero />
+      {/* <Waves /> */}
+      {/* <Projects />
       <div>
         <Quotation />
         <MoreAbout />

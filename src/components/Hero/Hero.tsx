@@ -1,22 +1,26 @@
 import { Slideshow } from '../Slideshow/Slideshow';
+import Me from '../../assets/myphoto.jpg';
+import { useSpring, animated } from '@react-spring/web';
 
 export const Hero = () => {
+ 
   return (
     <div>
-      <div>
-        <h3>Frontend Developer</h3>
-        <p>With passion in my heart</p>
+      <div className="waves-wrap">
+        <div>
+          <img src={Me} alt="me" width="120" />
+          <p>Kateryna Dziubchuk</p>
+          <h3>Frontend Developer</h3>
+          <p>With passion in my heart</p>
+        </div>
         <p>
           Welcome to my website, where you will see a story of success. From "Hello, World!" to apps
           with millions of users.
         </p>
-        <button type="button" aria-label="contact me">
-          Contact me
-        </button>
       </div>
-      <div>
+      {/* <div>
         <Slideshow></Slideshow>
-      </div>
+      </div> */}
     </div>
   );
 };
