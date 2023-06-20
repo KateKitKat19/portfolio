@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { SharedLayout } from './components/SharedLayout/SharedLayout';
-import { HomePage } from './pages/HomePage/HomePage';
-import { AboutPage } from './pages/AboutPage/AboutPage';
-import { ContactPage } from './pages/ContactPage/ContactPage';
+
+const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
+const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
+const ContactPage = lazy(() => import('./pages/ContactPage/ContactPage'));
 
 function App() {
   return (

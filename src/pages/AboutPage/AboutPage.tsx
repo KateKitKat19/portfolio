@@ -4,7 +4,8 @@ import softSkillsArr from '../../data/softskills.json';
 import { Skills } from '../../components/Skills/Skills';
 import { SoftSkills } from '../../components/SoftSkills/SoftSkills';
 import { Bio } from '../../components/Bio/Bio';
-export const AboutPage = () => {
+
+const AboutPage = () => {
   return (
     <div>
       <h3>This is my About Page</h3>
@@ -23,3 +24,5 @@ export const AboutPage = () => {
     </div>
   );
 };
+
+export default AboutPage;

@@ -3,7 +3,8 @@ import { Waves } from '../../components/Waves/Waves';
 import { Projects } from '../../components/Projects/Projects';
 import { Quotation } from '../../components/Quotation/Quotation';
 import { MoreAbout } from '../../components/MoreAbout/MoreAbout';
-export const HomePage = () => {
+
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -16,3 +17,5 @@ export const HomePage = () => {
     </>
   );
 };
+
+export default HomePage;
