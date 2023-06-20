@@ -7,13 +7,13 @@ import { MoreAbout } from '../../components/MoreAbout/MoreAbout';
 const HomePage = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <Waves />
       <Projects />
       <div>
         <Quotation />
         <MoreAbout />
-      </div>
+      </div> */}
     </>
   );
 };

@@ -9,11 +9,16 @@ export const Header = () => {
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Github link"
+          className="navigation__item"
         >
           GitHub
         </a>
-        <NavLink to="/about">About me</NavLink>
-        <NavLink to="/contacts">Contacts</NavLink>
+        <NavLink to="/about" className="navigation__item">
+          About me
+        </NavLink>
+        <NavLink to="/contacts" className="navigation__item">
+          Contacts
+        </NavLink>
       </nav>
     </header>
   );
