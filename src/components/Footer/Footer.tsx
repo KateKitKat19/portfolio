@@ -4,6 +4,9 @@ export const Footer = () => {
   return (
     <div className="footer">
       <nav className="navigation footer__nav">
+        <NavLink to="/" className="navigation__item">
+          Home
+        </NavLink>
         <a
           href="https://github.com/KateKitKat19"
           target="_blank"

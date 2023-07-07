@@ -8,7 +8,7 @@ import { Bio } from '../../components/Bio/Bio';
 const AboutPage = () => {
   return (
     <div>
-      <h3>This is my About Page</h3>
+      <h3 className='text-4xl font-bold'>This is my About Page</h3>
       <Description></Description>
       <ul>
         <li>

@@ -3,13 +3,12 @@ import Me from '../../assets/myphoto.jpg';
 import { useSpring, animated } from '@react-spring/web';
 
 export const Hero = () => {
- 
   return (
     <div>
       <div className="waves-wrap">
-        <div>
+        <div className='text-indigo-500'>
           <img src={Me} alt="me" width="120" />
-          <p>Kateryna Dziubchuk</p>
+          <p className="">Kateryna Dziubchuk</p>
           <h3>Frontend Developer</h3>
           <p>With passion in my heart</p>
         </div>

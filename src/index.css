@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.03em;
+    background-color: white;
+  }
+  body.dark {
+    background-color: #001931;
+  }
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  a:visited {
+    color: inherit;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply border-b-2 border-b-transparent hover:text-sky-900 hover:border-b-sky-900 transition-colors;
+  }
+}
