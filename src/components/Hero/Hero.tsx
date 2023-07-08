@@ -5,8 +5,8 @@ import { useSpring, animated } from '@react-spring/web';
 export const Hero = () => {
   return (
     <div>
-      <div className="waves-wrap">
-        <div className='text-indigo-500'>
+      <div>
+        <div className="flex-col content-center">
           <img src={Me} alt="me" width="120" />
           <p className="">Kateryna Dziubchuk</p>
           <h3>Frontend Developer</h3>
@@ -17,9 +17,9 @@ export const Hero = () => {
           with millions of users.
         </p>
       </div>
-      {/* <div>
+      <div>
         <Slideshow></Slideshow>
-      </div> */}
+      </div>
     </div>
   );
 };

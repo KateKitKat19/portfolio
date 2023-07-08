@@ -1,14 +1,13 @@
 import { Hero } from '../../components/Hero/Hero';
-import { Waves } from '../../components/Waves/Waves';
 import { Projects } from '../../components/Projects/Projects';
 import { Quotation } from '../../components/Quotation/Quotation';
 import { MoreAbout } from '../../components/MoreAbout/MoreAbout';
+import { FC } from 'react';
 
-const HomePage = () => {
+const HomePage: FC = () => {
   return (
     <>
       <Hero />
-      {/* <Waves /> */}
       {/* <Projects />
       <div>
         <Quotation />

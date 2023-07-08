@@ -1,8 +1,9 @@
 import { BallTriangle } from 'react-loader-spinner';
+import { FC } from 'react';
 
-export const Loader = () => {
+export const Loader: FC = () => {
   return (
-    <div className="loader-wrapper">
+    <div className="container">
       <BallTriangle
         height={100}
         width={100}

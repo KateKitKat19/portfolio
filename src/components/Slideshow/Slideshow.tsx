@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import { Fade } from 'react-slideshow-image';
 
@@ -42,13 +42,13 @@ const properties = {
   ),
 };
 
-export const Slideshow = () => {
+export const Slideshow: FC = () => {
   return (
     <div className="slide-container">
       <Fade {...properties}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <div className="divStyle" style={{ backgroundImage: `url(${slideImage.src})` }}></div>
+            <div className=" flex content-center justify-center bg-cover w-9/12 h-auto" style={{ backgroundImage: `url(${slideImage.src})` }}></div>
           </div>
         ))}
       </Fade>

@@ -46,6 +46,6 @@
 
 @layer components {
   .nav-link {
-    @apply border-b-2 border-b-transparent hover:text-sky-900 hover:border-b-sky-900 transition-colors;
+    @apply border-b-2 border-b-transparent hover:text-sky-900 hover:border-b-sky-900 transition-colors dark:hover:text-sky-300 dark:hover:border-b-sky-300;
   }
 }

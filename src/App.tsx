@@ -16,7 +16,6 @@ function App() {
     return localStorageTheme || browserDefault;
   };
   const [theme, setTheme] = useState(getDefaultTheme());
-  console.log('🚀 ~ file: App.tsx:14 ~ App ~ theme:', theme);
 
   useEffect(() => {
     theme === 'light'
