@@ -1,11 +1,6 @@
-import React, { lazy, useState, useEffect } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-import { SharedLayout } from './components/SharedLayout/SharedLayout';
+import React, { useState, useEffect } from 'react';
 import { ThemeContext } from './contexts/theme-context';
-
-const AboutPage = lazy(() => import('./pages/AboutPage/AboutPage'));
-const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
-const ContactPage = lazy(() => import('./pages/ContactPage/ContactPage'));
+import { HomePage } from './pages/HomePage/HomePage';
 
 function App() {
   const isBrowserDefaultDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -16,6 +11,7 @@ function App() {
     return localStorageTheme || browserDefault;
   };
   const [theme, setTheme] = useState(getDefaultTheme());
+  console.log('🚀 ~ file: App.tsx:19 ~ App ~ theme:', theme);
 
   useEffect(() => {
     theme === 'light'
@@ -25,14 +21,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
-      <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contacts" element={<ContactPage />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Route>
-      </Routes>
+      <HomePage></HomePage>
     </ThemeContext.Provider>
   );
 }

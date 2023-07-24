@@ -1,6 +1,6 @@
-import {  FC } from 'react';
-import { NavLink } from 'react-router-dom';
-
+import { FC } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import Logo from '../../assets/logo.png';
 export const Navigation: FC = () => {
   return (
     <nav className=" flex justify-center md:justify-end space-x-2 md:space-x-3 text-xs sm:text-sm md:text-base lg:text-lg text-sky-700 dark:text-sky-200 font-bold uppercase ">
