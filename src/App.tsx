@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { ThemeContext } from './contexts/theme-context';
 import { HomePage } from './pages/HomePage/HomePage';
+import { AboutPage } from './pages/AboutPage/AboutPage';
+import { Skills } from './components/Skills/Skills';
 
 function App() {
   const isBrowserDefaultDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -22,6 +24,8 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       <HomePage></HomePage>
+      <AboutPage></AboutPage>
+      <Skills></Skills>
     </ThemeContext.Provider>
   );
 }

@@ -1,28 +1,15 @@
 import { Description } from '../../components/Descr/Descr';
-import skillsArr from '../../data/skills.json';
-import softSkillsArr from '../../data/softskills.json';
-import { Skills } from '../../components/Skills/Skills';
-import { SoftSkills } from '../../components/SoftSkills/SoftSkills';
-import { Bio } from '../../components/Bio/Bio';
+import { Element } from 'react-scroll';
 
-const AboutPage = () => {
+export const AboutPage = () => {
   return (
-    <div>
-      <h3 className='text-4xl font-bold'>This is my About Page</h3>
-      <Description></Description>
-      <ul>
-        <li>
-          <Skills arr={skillsArr} />
-        </li>
-        <li>
-          <SoftSkills arr={softSkillsArr} />
-        </li>
-        <li>
-          <Bio></Bio>
-        </li>
-      </ul>
-    </div>
+    <Element
+      name="about"
+      className="w-full h-screen dark:bg-[#0a192f] bg-slate-100 dark:text-gray-300"
+    >
+      <div className="flex flex-col justify-center items-center w-full h-full">
+        <Description></Description>
+      </div>
+    </Element>
   );
 };
-
-export default AboutPage;

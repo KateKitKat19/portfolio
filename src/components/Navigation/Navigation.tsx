@@ -11,7 +11,7 @@ export const Navigation: FC = () => {
     <>
       <ul className=" hidden md:flex justify-center md:justify-end space-x-2 md:space-x-3 text-xs sm:text-sm md:text-base lg:text-lg text-sky-700 dark:text-sky-200 font-bold uppercase ">
         <li>
-          <Link to="/" smooth={true} duration={500} className="nav-link">
+          <Link to="home" smooth={true} duration={500} className="nav-link">
             Home
           </Link>
         </li>
@@ -27,12 +27,17 @@ export const Navigation: FC = () => {
           </a>
         </li>
         <li>
-          <Link to="/about" smooth={true} duration={500} className="nav-link">
+          <Link to="about" smooth={true} duration={500} className="nav-link">
             About me
           </Link>
         </li>
         <li>
-          <Link to="/contacts" smooth={true} duration={500} className="nav-link">
+          <Link to="skills" smooth={true} duration={500} className="nav-link">
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to="contacts" smooth={true} duration={500} className="nav-link">
             Contacts
           </Link>
         </li>
@@ -66,7 +71,7 @@ export const Navigation: FC = () => {
         }
       >
         <li className="py-4 text-xl">
-          <Link to="/" onClick={handleClick} smooth={true} duration={500} className="nav-link">
+          <Link to="home" onClick={handleClick} smooth={true} duration={500} className="nav-link">
             Home
           </Link>
         </li>
@@ -82,13 +87,13 @@ export const Navigation: FC = () => {
           </a>
         </li>
         <li className="py-4 text-xl">
-          <Link to="/about" onClick={handleClick} smooth={true} duration={500} className="nav-link">
+          <Link to="about" onClick={handleClick} smooth={true} duration={500} className="nav-link">
             About me
           </Link>
         </li>
         <li className="py-4 text-xl">
           <Link
-            to="/contacts"
+            to="contacts"
             onClick={handleClick}
             smooth={true}
             duration={500}
