@@ -1,7 +1,5 @@
 import { Hero } from '../../components/Hero/Hero';
-import { Projects } from '../../components/Projects/Projects';
-import { Quotation } from '../../components/Quotation/Quotation';
-import { MoreAbout } from '../../components/MoreAbout/MoreAbout';
+
 import { Header } from '../../components/Header/Header';
 import { FC } from 'react';
 import { Element } from 'react-scroll';
@@ -14,11 +12,6 @@ export const HomePage: FC = () => {
     >
       <Header></Header>
       <Hero />
-      {/* <Projects />
-      <div>
-        <Quotation />
-        <MoreAbout />
-      </div> */}
     </Element>
   );
 };

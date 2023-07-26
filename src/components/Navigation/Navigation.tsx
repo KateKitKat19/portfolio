@@ -15,17 +15,7 @@ export const Navigation: FC = () => {
             Home
           </Link>
         </li>
-        <li>
-          <a
-            href="https://github.com/KateKitKat19"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Github link"
-            className="nav-link"
-          >
-            GitHub
-          </a>
-        </li>
+
         <li>
           <Link to="about" smooth={true} duration={500} className="nav-link">
             About me
@@ -37,9 +27,25 @@ export const Navigation: FC = () => {
           </Link>
         </li>
         <li>
+          <Link to="works" smooth={true} duration={500} className="nav-link">
+            Projects
+          </Link>
+        </li>
+        <li>
           <Link to="contacts" smooth={true} duration={500} className="nav-link">
             Contacts
           </Link>
+        </li>
+        <li>
+          <a
+            href="https://github.com/KateKitKat19"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Github link"
+            className="nav-link"
+          >
+            GitHub
+          </a>
         </li>
       </ul>
 
@@ -75,20 +81,20 @@ export const Navigation: FC = () => {
             Home
           </Link>
         </li>
-        <li className="py-4 text-xl">
-          <a
-            href="https://github.com/KateKitKat19"
-            target="_blank"
-            rel="noreferrer noopener"
-            aria-label="Github link"
-            className="nav-link"
-          >
-            GitHub
-          </a>
-        </li>
+
         <li className="py-4 text-xl">
           <Link to="about" onClick={handleClick} smooth={true} duration={500} className="nav-link">
             About me
+          </Link>
+        </li>
+        <li className="py-4 text-xl">
+          <Link to="skills" onClick={handleClick} smooth={true} duration={500} className="nav-link">
+            Skills
+          </Link>
+        </li>
+        <li className="py-4 text-xl">
+          <Link to="works" smooth={true} duration={500} className="nav-link">
+            Projects
           </Link>
         </li>
         <li className="py-4 text-xl">
@@ -101,6 +107,17 @@ export const Navigation: FC = () => {
           >
             Contacts
           </Link>
+        </li>
+        <li className="py-4 text-xl">
+          <a
+            href="https://github.com/KateKitKat19"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Github link"
+            className="nav-link"
+          >
+            GitHub
+          </a>
         </li>
       </ul>
     </>
