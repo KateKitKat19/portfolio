@@ -1,4 +1,5 @@
 import { BiRightArrowCircle } from 'react-icons/bi';
+import { Link } from 'react-scroll';
 
 export const Hero = () => {
   return (
@@ -16,9 +17,16 @@ export const Hero = () => {
           with millions of users.
         </p>
         <div>
-          <button className="text-white bg-[#38A3A5] dark:bg-sky-700 group border-2 border-transparent px-6 py-3 my-2 flex items-center hover:bg-sky-900 dark:hover:bg-cyan-900 rounded-md">
-            View Works
-            <BiRightArrowCircle className="ml-3 " />
+          <button className="text-white bg-[#38A3A5] dark:bg-sky-700 group border-2 border-transparent  my-2 flex items-center hover:bg-sky-900 dark:hover:bg-cyan-900 rounded-md">
+            <Link
+              to="works"
+              smooth={true}
+              duration={500}
+              className="w-full flex justify-center items-center gap-2 px-6 py-3"
+            >
+              View Works
+              <BiRightArrowCircle className="" />
+            </Link>
           </button>
         </div>
       </div>

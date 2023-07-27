@@ -1,7 +1,8 @@
+import { FC } from 'react';
+
 import { Hero } from '../../components/Hero/Hero';
 
 import { Header } from '../../components/Header/Header';
-import { FC } from 'react';
 import { Element } from 'react-scroll';
 
 export const HomePage: FC = () => {

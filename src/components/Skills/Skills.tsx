@@ -1,25 +1,25 @@
-import HTML from '../../assets/html.png';
-import CSS from '../../assets/css.png';
-import JavaScript from '../../assets/javascript.png';
-import TypeScript from '../../assets/typescript.png';
-import ReactImg from '../../assets/react.png';
-import Node from '../../assets/node.png';
-import StyledComponents from '../../assets/styled-components.png';
-import Git from '../../assets/git.png';
-import Tailwind from '../../assets/tailwind.png';
-import Mongo from '../../assets/mongo.png';
-import Redux from '../../assets/redux.png';
-import Sass from '../../assets/sass.png';
+import HTML from '../../assets/tech-icons/html.png';
+import CSS from '../../assets/tech-icons/css.png';
+import JavaScript from '../../assets/tech-icons/javascript.png';
+import TypeScript from '../../assets/tech-icons/typescript.png';
+import ReactImg from '../../assets/tech-icons/react.png';
+import Node from '../../assets/tech-icons/node.png';
+import Git from '../../assets/tech-icons/git.png';
+import Tailwind from '../../assets/tech-icons/tailwind.png';
+import Mongo from '../../assets/tech-icons/mongo.png';
+import Redux from '../../assets/tech-icons/redux.png';
+import Sass from '../../assets/tech-icons/sass.png';
+import StyledComponents from '../../assets/tech-icons/styled-components.png';
 import { Element } from 'react-scroll';
 
 export const Skills = () => {
   return (
     <Element
       name="skills"
-      className="w-full h-screen dark:bg-[#0a192f] bg-slate-100 dark:text-gray-300"
+      className="w-full h-full sm:h-screen pt-20 dark:bg-[#0a192f] bg-slate-100 dark:text-gray-300"
     >
       {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full sm:h-full">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="text-[#22577A] dark:text-gray-300">
           <p className="text-4xl font-bold inline border-b-4 border-[#38A3A5] mb-2">Skills</p>
           <p className="py-4 text-xl "> These are the technologies I've worked with</p>

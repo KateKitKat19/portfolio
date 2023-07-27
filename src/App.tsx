@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage/HomePage';
 import { AboutPage } from './pages/AboutPage/AboutPage';
 import { Skills } from './components/Skills/Skills';
 import { Slideshow } from './components/Slideshow/Slideshow';
+import { CarouselComponent } from './components/Carousel/Carousel';
 
 function App() {
   const isBrowserDefaultDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -27,7 +28,7 @@ function App() {
       <HomePage></HomePage>
       <AboutPage></AboutPage>
       <Skills></Skills>
-      <Slideshow></Slideshow>
+      <CarouselComponent></CarouselComponent>
     </ThemeContext.Provider>
   );
 }
